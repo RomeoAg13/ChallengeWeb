@@ -41,18 +41,19 @@ img{
     width: 60%;
     align-items: center;
 }
-.div1{
-    display: flex;
-    width: 87%;
-    justify-content: center;
+
+.div1 {
+  display: flex;
+  width: 87%;
+  justify-content: center;
 }
 
-.div2{
-    display: flex;
+.div2 {
+  display: flex;
 }
 
-a{
-    margin: 10px;
+a {
+  margin: 10px;
 }
 
 
