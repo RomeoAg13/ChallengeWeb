@@ -59,6 +59,8 @@ nav{
     width: 20%;
     position: sticky;
     top: 0px;
+    display: flex;
+    align-items: center;
 }
 nav ul {
     list-style-type: none;
@@ -66,10 +68,13 @@ nav ul {
 
 nav ul li{
     float: left;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  align-items: center;
+    width: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 3vh;
+    border-radius: 5px;
+    padding: 1px;
 }
 
 nav ul::after{
@@ -86,17 +91,32 @@ nav a {
     padding: 10px 0px;
 }
 
-nav a:hover{
-    color: orange;
-    border-bottom: 2px solid gold;
+.deroulant:hover{
+    background-color: #cccccc42;
 }
+
+.login{
+    margin: 10px;
+    width: 18%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
 
 .sous{
     display: none;
     box-shadow: 0px 1px 2px #ccc;
 }
 
-nav > ul li:hover .sous{
+nav > ul li::after .sous{
     display: block;
 }
 
@@ -117,7 +137,6 @@ nav > ul li:hover .sous{
 }
 
 .deroulant > a::after{
-    content: ":";
     font-size: 12px;
 }
 
