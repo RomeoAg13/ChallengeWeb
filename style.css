@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 
 body{
@@ -9,9 +8,10 @@ body{
     background-color: rgb(34, 34, 34);
     font-family: "DM Sans", sans-serif;
     height: auto;
-    overflow-x: hidden
-
+    overflow-x: hidden;
 }
+
+
 .video{
     height: 100%;
     width: 100vw;
@@ -30,16 +30,16 @@ header {
 
 
 img{
-    width: 20%;
-  height: 5vh;
+    width: 15%;
+  height: 4vh;
 }
 
 .img{
     display: flex;
-  justify-content: center;
-  height: 100px;
-  width: 60%;
-  align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 60%;
+    align-items: center;
 }
 .div1{
     display: flex;
@@ -62,7 +62,7 @@ a{
 
 .login{
     margin: 10px;
-    width: 18%;
+    width: 20%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -77,28 +77,30 @@ button{
 }
 
 .btn {
-  width: 15%;
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-}
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
 
-
-.nav-toggler{
+  .nav-toggler {
     position: absolute;
     z-index: 10;
-    top: 30px;
     left: 30px;
     height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    width: 35px;
+    background: transparent;
     border: none;
     outline: none;
     cursor: pointer;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
-    background: transparent;
+    transition: left 0.6s ease; 
+}
+
+.nav-toggler.active {
+    left: 310px;
 }
 
 
@@ -107,73 +109,91 @@ button{
     display: block;
     width: 100%;
     height: 2px;
-    background:#f1f1f1 ;
+    background: white;
     transition: transform 0.3s ease-out, opacity 0.1s ease-out;
 }
 
-
-.l1{
+.l1 {
     transform: translateY(-10px);
-
 }
 
-.l3{
+.l3 {
     transform: translateY(10px);
 }
 
-
-.nav-toggler:active .l1{
+.nav-toggler.active .l1{
     transform: translateY(0px) rotate(45deg);
 }
 
-.nav-toggler:active .l2{
+.nav-toggler.active .l2{
     opacity: 0;
 }
 
 
-.nav-toggler:active .l3{
+.nav-toggler.active .l3{
     transform: translateY(0px) rotate(-45deg);
 }
 
-nav{
+
+nav {
+    width: 0;
+    height: 100vh;
     position: fixed;
-    width: 100vw;
-    min-height: 50vh;
+    top: 0;
+    left: 0;
+    background-color: #c9c7c7f8;
+    overflow-x: hidden;
+    transition: width 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    z-index: 9; 
+}
+
+nav.active {
+    width: 300px; 
+
+}
+
+
+nav a {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    border-bottom: 1px solid white;
-    transform: translateY(-100%);
-    transition: transform 0.3s cubic-bezier(0.73,0.11,0.67,0.84);
-}
-
-nav:active{
-    transform: translate(0);
-}
-
-nav a{
-    display: block;
-    margin: 10px 0;
+    padding: 20px;
     text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+    position: relative;
+    top: 30%;
+    border: 1px solid gray;
+    font-style: italic;
+    height: 2%;
 }
 
 
+nav a img {
+    height: 70%;
+    width: 6%;
+  }
 
+nav a:hover {
+    background-color: #f0f0f0;
+}
 
 
 @media screen and (max-width:958px){
-    img{
+    img {
         height: 4vh;
-    }
-    header .img{
+        width: 25%;
+      }
+    header .img {
         display: flex;
         justify-content: center;
-        width: 58%;
-        height: auto;
-    }
+        width: 60%;
+        height: 100%;
+      }
     header {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        height: 10%;
       }
 }
