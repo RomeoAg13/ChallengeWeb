@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+*::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    border-radius: 8px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 5.5px solid transparent;
+    background-clip: content-box;
+    background-color: #888;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
 
 body{
     margin: 0;
@@ -11,18 +30,18 @@ body{
     overflow-x: hidden;
 }
 
-
-.video{
-    height: 100%;
-    width: 100vw;
-}
-
 header {
     display: flex;
     position: absolute;
     z-index: 0;
     width: 100%;
   }
+
+.video{
+    height: 100%;
+    width: 100vw;
+}
+
 
 .btn img {
     width: 100%;
@@ -54,11 +73,6 @@ img{
 
 a {
   margin: 10px;
-}
-
-
-.deroulant:hover{
-    background-color: #cccccc42;
 }
 
 .login{
@@ -102,6 +116,7 @@ button{
 
 .nav-toggler.active {
     left: 310px;
+    position: fixed;
 }
 
 
@@ -150,7 +165,7 @@ nav {
 
 nav.active {
     width: 300px; 
-
+    
 }
 
 
@@ -198,3 +213,116 @@ nav a:hover {
         height: 10%;
       }
 }
+
+
+
+
+.main_container {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 26vw;
+    height: 70vh;
+    margin: 0 200px 150px 0;
+    border-radius: 20px;
+    background-image: url("image/charger.jpg");
+    background-position: 50% 80%;
+    border: 1px solid black;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 26vw;
+    height: 70vh;
+    margin: 0 0px 80px 0px;
+    border-radius: 20px;
+    background-image: url("image/challenger.jpg");
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+  }
+  
+  .card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 26vw;
+    height: 70vh;
+    margin: 0 200px 150px 0;
+    border-radius: 20px;
+    background-image: url("image/hornet.jpg");
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+    z-index:-1;
+  }
+  
+  .card4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 26vw;
+    height: 70vh;
+    margin: 0 0px 80px 0px;
+    border-radius: 20px;
+    background-image: url("image/durango.jpg");
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+    
+  }
+  
+  .card1,
+  .card2,
+  .card3,
+  .card4 p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+  }
+  
+  span.buttoncatalogue {
+    margin-top: auto;
+    align-self: flex-end;
+  }
+  
+  .buttoncatalogue button {
+    cursor: pointer;
+    color: var(--dark-overlay-text-100, #fff);
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    width: 350px;
+    height: 40px;
+    border-radius: 8.893px;
+    background: var(--primary-600, rgb(165, 53, 53));
+    border: 0px solid white;
+    overflow: hidden;
+    text-overflow: clip;
+    margin: 10px;
+  }
+  
