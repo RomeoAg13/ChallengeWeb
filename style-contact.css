@@ -14,7 +14,7 @@ body{
 header {
     display: flex;
     position: sticky;
-    z-index: 0;
+    z-index: 1;
     width: 100%;
   }
 
@@ -186,7 +186,7 @@ ul p {
   overflow: hidden;
   margin: auto;
   margin-bottom: 90px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .customer::before {
@@ -228,6 +228,7 @@ h1 {
   color: white;
   padding: 13px;
   border-radius: 20px;
+  z-index: 2;
 }
 
 
