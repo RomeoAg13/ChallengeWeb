@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style-charger.css' rel="stylesheet" type="text/css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="deroulant">
+                    <button onclick="open()"><img src="./image/interface-utilisateur(1).png" alt="menu burger">
+                    <ul class="sous">
+                        <li><a href="catalogue.html">Vehicles</a></li>
+                        <li><a href="#">Dodge Muscle</a></li>
+                        <li><a href="#">Owners</a></li>
+                    </ul>
+                   
+                </li>
+            </ul>
+        </nav>
+        <div class="img">
+            <img src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/global/header/logo-dodge.png" alt="logo dodge">
+        </div>
+        <a href="#" class="login">se connecter</a>
+    </header>
+
+    <div class="slide-container">
+        <div class="custom-slider fade">
+          <div class="slide-index"></div>
+          <img class="slide-img" src="image/1.jpg">
+        </div>
+        <div class="custom-slider fade">
+          <img class="slide-img" src="image/2.jpg">
+        </div>
+        <div class="custom-slider fade">
+          <img class="slide-img" src="image/3.jpg">
+        </div>
+        <div class="custom-slider fade">
+            <img class="slide-img" src="image/4.jpg">
+          </div>
+          <div class="custom-slider fade">
+            <img class="slide-img" src="image/5.jpg">
+          </div>
+          <div class="custom-slider fade">
+            <img class="slide-img" src="image/6.jpg">
+          </div>
+          <div class="custom-slider fade">
+            <img class="slide-img" src="image/7.jpg">
+          </div>
+          <div class="custom-slider fade">
+            <img class="slide-img" src="image/8.jpg">
+          </div>
+          <div class="custom-slider fade">
+            <img class="slide-img" src="image/9.jpg">
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div class="slide-dot">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        <span class="dot" onclick="currentSlide(8)"></span> 
+        <span class="dot" onclick="currentSlide(9)"></span> 
+      </div>
+
+    <main>
+        <h2> Dodge Durango </h2>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

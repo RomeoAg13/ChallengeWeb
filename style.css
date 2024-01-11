@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=MuseoModerno:ital,wght@0,900;1,300&display=swap');
 *::-webkit-scrollbar {
     width: 16px;
   }
@@ -102,8 +103,8 @@ button{
     position: absolute;
     z-index: 10;
     left: 30px;
-    height: 50px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     background: transparent;
     border: none;
     outline: none;
@@ -115,8 +116,11 @@ button{
 }
 
 .nav-toggler.active {
-    left: 310px;
-    position: fixed;
+  left: 290px;
+  position: fixed;
+  border: 2px solid #000000a8;
+  border-radius: 7px;
+  width: 30px;
 }
 
 
@@ -157,31 +161,33 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #c9c7c7f8;
+    background: #ffffffd6;
     overflow-x: hidden;
     transition: width 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
     z-index: 9; 
 }
 
 nav.active {
-    width: 300px; 
+    width: 330px; 
     
 }
 
 
 nav a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    text-decoration: none;
-    color: #333;
-    transition: background-color 0.3s;
-    position: relative;
-    top: 30%;
-    border: 1px solid gray;
-    font-style: italic;
-    height: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s;
+  position: relative;
+  top: 30%;
+  font-style: italic;
+  height: auto;
+  font-size: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
 }
 
 
@@ -191,7 +197,8 @@ nav a img {
   }
 
 nav a:hover {
-    background-color: #f0f0f0;
+    background-color: #bebebe;
+    
 }
 
 
@@ -218,95 +225,136 @@ nav a:hover {
 
 
 .main_container {
-    padding-top: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 65%;
-    margin: 0 auto;
-    position: relative;
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
   }
   
   .card1 {
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 26vw;
-    height: 70vh;
-    margin: 0 200px 150px 0;
+    width: 28vw;
+    height: 80vh;
+    margin-bottom: 100px;
     border-radius: 20px;
-    background-image: url("image/charger.jpg");
-    background-position: 50% 80%;
-    border: 1px solid black;
-    position: relative;
-    z-index: -1;
-  }
-  
-  .card2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 26vw;
-    height: 70vh;
-    margin: 0 0px 80px 0px;
-    border-radius: 20px;
-    background-image: url("image/challenger.jpg");
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/027/395/858/large/frederic-caeyers-charger-front-use.jpg?1591403698");
     background-position: center;
     border: 1px solid black;
     position: relative;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .card1 button{
+    z-index: 100;
   }
   
+  i {
+    margin-top: 7px;
+    font-size: 16px;
+    width: 100%;
+  }  
+
+
+  .card2 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 28vw;
+    height: 80vh;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-image: url("https://gotmdm.com/custom/wp-content/uploads/sites/6/2017/12/SpeedKore-Dodge-Challenger-SRT-Demon-2017-front-face.jpg");
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+    background-size: cover;
+  }
+  
+
+  .buttoncatalogue button:hover {
+    background-color: white;
+    color: black;
+  }
+
   .card3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 26vw;
-    height: 70vh;
-    margin: 0 200px 150px 0;
+    width: 28vw;
+    height: 80vh;
     border-radius: 20px;
-    background-image: url("image/hornet.jpg");
-    background-position: center;
+    background-image: url("https://www.largus.fr/images/2022-08/dodge-hornet-2022-bleu-ar-mk.jpg");
+    background-position: 59%;
     border: 1px solid black;
     position: relative;
-    z-index:-1;
+
+    background-size: cover;
   }
   
   .card4 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 26vw;
-    height: 70vh;
-    margin: 0 0px 80px 0px;
+    width: 28vw;
+    height: 80vh;
     border-radius: 20px;
-    background-image: url("image/durango.jpg");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/938/537/269/2016-dodge-durango-wallpaper-preview.jpg");
     background-position: center;
     border: 1px solid black;
     position: relative;
+    background-size: cover;
     
   }
   
-  .card1,
-  .card2,
-  .card3,
+  .card1 p,
+  .card2 p,
+  .card3 p,
   .card4 p {
-    font-size: 16px;
-    text-align: center;
-  }
+    font-size: 18px;
+  margin: 0px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: unset;
+  font-style: italic;
+    }
   
   h3 {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 20px;
+    font-family: 'Italiana', sans-serif;
+    color: #fffefe;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 400;
+    font-weight:bold;
     line-height: normal;
     padding-left: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    margin: 0;
+    flex-wrap: wrap;
   }
   
+  .button {
+    display: flex;
+    width:100%;
+    justify-content: initial;
+    align-items: center;
+  }
+
   span.buttoncatalogue {
     margin-top: auto;
-    align-self: flex-end;
+    width: 100%;
+    height: auto;
   }
   
   .buttoncatalogue button {
@@ -316,13 +364,135 @@ nav a:hover {
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    width: 350px;
+    width: 33%;
     height: 40px;
-    border-radius: 8.893px;
-    background: var(--primary-600, rgb(165, 53, 53));
-    border: 0px solid white;
+    cursor: pointer;
+    border: 1px solid white;
     overflow: hidden;
     text-overflow: clip;
     margin: 10px;
   }
   
+  .nav-toggler.active .line {
+    background-color: rgb(39, 39, 39);
+  }
+
+
+
+
+  
+
+@media screen and (max-width:500px){
+  body{
+    margin: 0;
+
+
+  }
+
+
+  header img{
+    width: inherit;
+  }
+
+  nav.active{
+    width: 213px;
+  }
+  nav {
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffffd6;
+    overflow-x: hidden;
+    transition: width 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    z-index: 9;
+  }
+
+  .nav-toggler.active {
+    left: 10px;
+    position: fixed;
+    border: 2px solid #000000a8;
+    border-radius: 7px;
+    width: 30px;
+  }
+  span.buttoncatalogue {
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+  }
+  .card1 p, .card2 p, .card3 p, .card4 p {
+    font-size: 18px;
+    margin: 0px 15px;
+      margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: unset;
+    font-style: italic;
+    margin-top: 110px;
+  }
+
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/027/395/858/large/frederic-caeyers-charger-front-use.jpg?1591403698");
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .card2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-image: url("https://gotmdm.com/custom/wp-content/uploads/sites/6/2017/12/SpeedKore-Dodge-Challenger-SRT-Demon-2017-front-face.jpg");
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .card3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-image: url("https://www.largus.fr/images/2022-08/dodge-hornet-2022-bleu-ar-mk.jpg");
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+    background-size: cover;
+    z-index: 0;
+  }
+  .card4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/938/537/269/2016-dodge-durango-wallpaper-preview.jpg");
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+    background-size: cover;
+    z-index: 0;
+  }
+}

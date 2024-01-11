@@ -1,21 +1,37 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const burgerIcon = document.querySelector(".nav-toggler");
-    const closeNavBtn = document.querySelector("#close-nav");
-    const navigation = document.querySelector("nav");
+  const burgerIcon = document.querySelector(".nav-toggler");
+  const navigation = document.querySelector("nav");
 
-    burgerIcon.addEventListener("click", toggleNav);
-    closeNavBtn.addEventListener("click", closeNav);
+  burgerIcon.addEventListener("click", toggleNav);
 
-    function toggleNav() {
-        burgerIcon.classList.toggle("active");
-        navigation.classList.toggle("active");
-    }
 
-    function closeNav() {
-        burgerIcon.classList.remove("active");
-        navigation.classList.remove("active");
-    }
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach(link => {
+      link.addEventListener("click", closeNav);
+  });
+
+  function toggleNav() {
+      burgerIcon.classList.toggle("active");
+      navigation.classList.toggle("active");
+  }
+
+  function closeNav() {
+      burgerIcon.classList.remove("active");
+      navigation.classList.remove("active");
+  }
+
+
+  document.addEventListener("click", function(event) {
+      const isClickInsideNav = navigation.contains(event.target);
+      const isClickOnBurger = burgerIcon.contains(event.target);
+
+      if (!isClickInsideNav && !isClickOnBurger) {
+          burgerIcon.classList.remove("active");
+          navigation.classList.remove("active");
+      }
+  });
 });
+
 
 
 var slideIndex = 1;
