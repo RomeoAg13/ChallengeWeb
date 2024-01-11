@@ -424,6 +424,8 @@ nav a:hover {
   nav.active{
     width: 213px;
   }
+
+  
   nav {
     width: 0;
     height: 100vh;
