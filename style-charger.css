@@ -63,10 +63,6 @@ header {
   height: 3vh;
 }
 
-img {
-  width: 20%;
-  height: 5vh;
-}
 .img {
   display: flex;
   justify-content: center;
@@ -88,7 +84,6 @@ img {
 a {
   margin: 10px;
 }
-
 
 .deroulant:hover {
   background-color: #cccccc42;
@@ -189,6 +184,12 @@ nav > ul li::after .sous {
   position: absolute;
   top: 0;
 }
+
+.img img {
+  width: 80%;
+  height: 3vh;
+}
+
 .slide-img {
   width: 100%;
   height: 900px;
@@ -223,15 +224,10 @@ nav > ul li::after .sous {
   }
 }
 
-h2 {
-  text-align: center;
-}
-
-
-button{
+button {
   background-color: transparent;
   border: none;
-  width:auto;
+  width: auto;
 }
 
 .btn {
@@ -254,16 +250,15 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: left 0.6s ease; 
+  transition: left 0.6s ease;
 }
 
 .nav-toggler.active {
-left: 290px;
-position: fixed;
-border-radius: 7px;
-width: 30px;
+  left: 290px;
+  position: fixed;
+  border-radius: 7px;
+  width: 30px;
 }
-
 
 .line {
   position: absolute;
@@ -282,19 +277,17 @@ width: 30px;
   transform: translateY(10px);
 }
 
-.nav-toggler.active .l1{
+.nav-toggler.active .l1 {
   transform: translateY(0px) rotate(45deg);
 }
 
-.nav-toggler.active .l2{
+.nav-toggler.active .l2 {
   opacity: 0;
 }
 
-
-.nav-toggler.active .l3{
+.nav-toggler.active .l3 {
   transform: translateY(0px) rotate(-45deg);
 }
-
 
 nav {
   width: 0;
@@ -305,34 +298,32 @@ nav {
   background: #ffffffd6;
   overflow-x: hidden;
   transition: width 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
-  z-index: 9; 
+  z-index: 9;
 }
 
 nav.active {
-  width: 330px; 
-  
+  width: 330px;
 }
 
 .nav-toggler.active .line {
   background-color: rgb(39, 39, 39);
 }
 nav a {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px;
-text-decoration: none;
-color: #000;
-transition: background-color 0.3s;
-position: relative;
-top: 30%;
-font-style: italic;
-height: auto;
-font-size: 20px;
-margin-bottom: 25px;
-border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s;
+  position: relative;
+  top: 30%;
+  font-style: italic;
+  height: auto;
+  font-size: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
 }
-
 
 nav a img {
   height: 70%;
@@ -341,5 +332,115 @@ nav a img {
 
 nav a:hover {
   background-color: #bebebe;
-  
+}
+
+.description {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.description-container {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.description-container img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.description-container p {
+  padding-top: 15px;
+  margin: 0;
+}
+
+.motor-container {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.motor-container img {
+  padding-top: 250px;
+  width: 60%;
+}
+
+.motor-container p {
+  padding-top: 15px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.interior-container {
+  text-align: center;
+  margin: 0 50px;
+}
+
+.interior-container img {
+  padding-top: 150px;
+  width: 50%;
+}
+
+.interior-container p {
+  padding-top: 15px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.video-container {
+  padding-top: 200px;
+  text-align: center;
+  margin: 0 80px;
+}
+
+.video-container iframe {
+  text-align: center;
+  width: 40%;
+}
+
+
+
+
+footer {
+  margin-top: 20px !important;
+  background-color: #000;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer h5{
+  margin-top: 0;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+footer ul{
+  margin-top: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+footer li:last-child{
+  margin-bottom: 0px;
+}
+
+footer p{
+  text-align: center;
+  margin: 10px 20px;
+  font-size: x-small;
 }

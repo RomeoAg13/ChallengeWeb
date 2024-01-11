@@ -1,84 +1,237 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='style-charger.css' rel="stylesheet" type="text/css">
-    
-    <title>Dodge-Charger</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style-charger.css" rel="stylesheet" type="text/css" />
+
+    <title>Document</title>
+  </head>
+  <body>
     <header>
       <div class="btn">
-        <button type="button" aria-label="toggle curtain navigation" id='nav-toggler' class="nav-toggler">
-        <span class="line l1"></span>
-        <span class="line l2"></span>
-        <span class="line l3"></span>
+        <button
+          type="button"
+          aria-label="toggle curtain navigation"
+          id="nav-toggler"
+          class="nav-toggler"
+        >
+          <span class="line l1"></span>
+          <span class="line l2"></span>
+          <span class="line l3"></span>
         </button>
-    </div>
+      </div>
 
-    <nav>
-        <a href="/ChallengeWeb/index.html#catalogue">Vehicles<img src="./image/fleche-droite.png" alt=""></a>
+      <nav>
+        <a href="/ChallengeWeb/index.html#catalogue"
+          >Vehicles<img src="./image/fleche-droite.png" alt=""
+        /></a>
 
-        <a href="https://www.dodgegarage.com/">Dodge Garage<img src="./image/fleche-droite.png" alt=""></a>
-        <a href="/ChallengeWeb/contact.html">Contactez-Nous<img src="./image/fleche-droite.png" alt=""></a>
-    </nav>
+        <a href="https://www.dodgegarage.com/"
+          >Dodge Garage<img src="./image/fleche-droite.png" alt=""
+        /></a>
+        <a href="/ChallengeWeb/contact.html"
+          >Contactez-Nous<img src="./image/fleche-droite.png" alt=""
+        /></a>
+      </nav>
 
-    
-        <div class="img">
-            <img src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/global/header/logo-dodge.png" alt="logo dodge">
-        </div>
-        <a href="#" class="login">se connecter</a>
+      <div class="img">
+       <a href="/ChallengeWeb/index.html"> <img
+          src="https://www.dodge.com/content/dam/fca-brands/na/dodge/en_us/global/header/logo-dodge.png"
+          alt="logo dodge"
+        /></a>
+      </div>
     </header>
 
     <div class="slide-container">
-        <div class="custom-slider fade">
-          <div class="slide-index"></div>
-          <img class="slide-img" src="image/1.jpg">
-        </div>
-        <div class="custom-slider fade">
-          <img class="slide-img" src="image/2.jpg">
-        </div>
-        <div class="custom-slider fade">
-          <img class="slide-img" src="image/3.jpg">
-        </div>
-        <div class="custom-slider fade">
-            <img class="slide-img" src="image/4.jpg">
-          </div>
-          <div class="custom-slider fade">
-            <img class="slide-img" src="image/5.jpg">
-          </div>
-          <div class="custom-slider fade">
-            <img class="slide-img" src="image/6.jpg">
-          </div>
-          <div class="custom-slider fade">
-            <img class="slide-img" src="image/7.jpg">
-          </div>
-          <div class="custom-slider fade">
-            <img class="slide-img" src="image/8.jpg">
-          </div>
-          <div class="custom-slider fade">
-            <img class="slide-img" src="image/9.jpg">
-          </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="custom-slider fade">
+        <div class="slide-index"></div>
+        <img class="slide-img" src="image/1.jpg" />
       </div>
-      <br>
-      <div class="slide-dot">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span> 
-        <span class="dot" onclick="currentSlide(5)"></span> 
-        <span class="dot" onclick="currentSlide(6)"></span> 
-        <span class="dot" onclick="currentSlide(7)"></span> 
-        <span class="dot" onclick="currentSlide(8)"></span> 
-        <span class="dot" onclick="currentSlide(9)"></span> 
+      <div class="custom-slider fade">
+        <img class="slide-img" src="image/2.jpg" />
       </div>
+      <div class="custom-slider fade">
+        <img class="slide-img" src="image/3.jpg" />
+      </div>
+      <div class="custom-slider fade">
+        <img class="slide-img" src="image/4.jpg" />
+      </div>
+      <div class="custom-slider fade">
+        <img class="slide-img" src="image/5.jpg" />
+      </div>
+      <div class="custom-slider fade">
+        <img class="slide-img" src="image/6.jpg" />
+      </div>
+      <div class="custom-slider fade">
+        <img class="slide-img" src="image/7.jpg" />
+      </div>
+      <div class="custom-slider fade">
+        <img class="slide-img" src="image/8.jpg" />
+      </div>
+      <div class="custom-slider fade">
+        <img class="slide-img" src="image/9.jpg" />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div class="slide-dot">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
 
     <main>
-        <h2> Dodge Charger </h2>
+      <div class="description">
+        <div class="description-container">
+          <img src="image/charger-left.jpg" alt="" />
+          <p>
+            Le Charger SRT® Hellcat Redeye est la muscle-car la plus puissante
+            au monde.
+          </p>
+        </div>
+
+        <div class="description-container">
+          <img src="image/charger-right.jpg" alt="" />
+          <p>
+            La Charger SRT® Hellcat Redeye Widebody 2023est la muscle-car quatre
+            portes la plus rapide au monde.
+          </p>
+        </div>
+      </div>
+
+      <div class="motor">
+        <div class="motor-container">
+          <img src="image/motor.png" alt="" />
+          <p>
+            Sous le capot de cette berline qui ma mettre la misère (au moins en
+            ligne droite) aux E63 AMG, M5 ou RS6, on retrouve le fameux V8 6.2 L
+            HEMI à compresseur fort de 717 ch (527 kW) et 881 Nm de couple. Ce
+            moteur est associé à une BVAS à 8 rapports et commande par palette
+            au volant. La puissance est transmise aux roues arrières. Sur la
+            Charger SRT Hellcat, il n’y a pas de BVM6 ni de transmission AWD.
+            <br /><br />
+            La berline dispose bien sur de toutes les assistances électroniques
+            du moment et reprend le selecteur de Mode de fonctionnement à 5
+            programmes :
+            <br /><br />
+            – Mode Par Défaut (tout est préréglé électroniquement et
+            normalement)
+            <br />
+            – Mode Sport (gestion électronique axée vers la conduite dynamique
+            et sportive)
+            <br />
+            – Mode Track (performances et capacités maximales sur piste sèche)
+            <br />
+            – Mode Eco (gestion light avec limitation du régime moteur,
+            démarrage en 2eme, optimisation du fonctionnement pour moins de
+            consommation)
+            <br />
+            – Mode Personnalisé (paramétrage personnalisé)
+            <br /><br />
+
+            Ces différents modes de fonctionnement sont commandés et gérés via
+            le système Uconnect et un bouton SRT au tableau de bord et des
+            applications gérables depuis l’écran du système d’infotainment de
+            l’auto.
+            <br />
+            La Charger SRT Hellcat est livrée de série avec deux clefs, une
+            noire et une rouge. La clef noire limite un certain nombre de
+            fonctions et de paramètres de gestion de la supercar. Ainsi avec la
+            clef noire, le moteur n’ira pas au delà des 4000 trs/min, le
+            conducteur ne pourra pas passer les rapports en dehors de ce qui est
+            prévu dans l’ECU, la suspension sera en mode “Road”, la fonction
+            Launch Control est désactivée, l’ESP est en mode maximal, la
+            fonction Drive Mode est inactive tout comme la commande de la BVA
+            par palettes. Un régulateur de vitesse adaptif est proposé en
+            option.
+          </p>
+        </div>
+      </div>
+      <div class="interior">
+        <div class="interior-container">
+          <img src="image/interior-1.png" alt="" />
+          <p>
+            L’habitacle est et reste celui d’une Charger, c’est à dire correct
+            mais sans grande originalité ni luxe particulier, seule la
+            sportivité des habillages vient donner une allure agréable à
+            l’ensemble notamment avec la jolie sellerie bi-matière cuir
+            noir/alcantara rouge. D’autres selleries plus classiques sont au
+            catalogue du modèle. La Hellcat s’équipe de nouveaux sièges sport à
+            l’avant qui sont chauffants et ventilés. La banquette arrière est
+            quant à elle chauffante comme le volant sport. L’espace à voyager
+            profite d’un mobilier recouvert d’un habillage façon fibre de
+            carbone et de quelques chromes qui valorisent l’ensemble.
+          </p>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video-container">
+          <h2>
+            Pour retrouver la Dodge Charger SRT Hellcat en vidéo, c’est par là :
+          </h2>
+          <iframe
+            width="560"
+            height="350"
+            src="https://www.youtube.com/embed/t6HXPBQH05s?si=PmUnmfeerQ8e07ag"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="350"
+            src="https://www.youtube.com/embed/_W9jOf0Pgn8?si=Z5LvvLI1y-t7VwV-"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="350"
+            src="https://www.youtube.com/embed/xZ66boFL5Qs?si=n27gmXyWDMKJZPxc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </main>
-</body>
-<script src="script.js"></script>
+    <footer id="footer" role="contentinfo">
+      <ul>
+          <br>
+          <h5>Vehicules</h5>
+          <li>Charger</li>
+          <li>Challenger</li>
+          <li>Hornet</li>
+          <li>Durango</li>
+          <br>
+      </ul>
+      <a href="">Dodge Garage</a>
+
+      <a href="/ChallengeWeb/contact.html">Contactez nous</a>
+      <br><br>
+      <section>
+          <p>©2023 FCA États-Unis LLC. Tous droits réservés.
+              Chrysler, Dodge, Jeep, Ram, Wagoneer, Mopar et SRT sont des marques déposées de FCA US LLC.
+              ALFA ROMEO et FIAT sont des marques déposées de FCA US LLC Group Marketing S.p.A., utilisées avec autorisation.
+              
+              *Le PDSF exclut la destination, les taxes, les titres de propriété et les frais d'enregistrement. Le prix de départ se réfère au modèle de base, équipement en option non inclus. Un modèle plus cher peut être présenté. Les prix et les offres peuvent changer à tout moment sans notification. Pour obtenir tous les détails des prix, consultez votre revendeur.
+              
+              
+              FCA US LLC s'efforce de garantir que son site Web soit accessible aux personnes handicapées. Si vous rencontrez un problème pour accéder à un contenu sur Dodge.com, veuillez envoyer un e-mail à notre équipe de service client ou appeler le 800-4ADodge, pour obtenir de l'aide ou pour signaler un problème. L'accès à https://www.dodge.com/webselfservice/dodge/index.html est soumis à la politique de confidentialité et aux conditions d'utilisation de FCA US LLC.</p>
+      </section>
+  </footer>
+  </body>
+  <script src="script.js"></script>
 </html>

@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 var slideIndex = 1;
 showSlides(slideIndex);
 

@@ -529,3 +529,47 @@ nav a:hover {
     z-index: 0;
   }
 }
+
+
+
+footer {
+  margin-top: 20px !important;
+  background-color: #000;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer h5{
+  margin-top: 0;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+footer ul{
+  margin-top: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+footer li:last-child{
+  margin-bottom: 0px;
+}
+
+footer p{
+  text-align: center;
+  margin: 10px 20px;
+  font-size: x-small;
+}
