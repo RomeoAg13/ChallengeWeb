@@ -28,7 +28,7 @@ body{
     background-color: rgb(34, 34, 34);
     font-family: "DM Sans", sans-serif;
     height: auto;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 header {
@@ -38,10 +38,7 @@ header {
     width: 100%;
   }
 
-.video{
-    height: 100%;
-    width: 100vw;
-}
+
 
 
 .btn img {
@@ -118,7 +115,6 @@ button{
 .nav-toggler.active {
   left: 290px;
   position: fixed;
-  border: 2px solid #000000a8;
   border-radius: 7px;
   width: 30px;
 }
@@ -200,9 +196,38 @@ nav a:hover {
     background-color: #bebebe;
     
 }
+.video{
+  overflow-x: hidden;
+}
 
+.video1{
+  overflow-x: hidden;
 
+  display: none;
+}
+
+#myVideo{
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
 @media screen and (max-width:958px){
+
+  .video{
+    display: none;
+  }
+
+  .video1 {
+    display: block;
+    width: 100%;
+    height: 100vh;
+   
+  }
+
+
+  #myVideo {
+    height: 100vh;
+  }
     img {
         height: 4vh;
         width: 25%;
@@ -234,32 +259,33 @@ nav a:hover {
   position: relative;
   }
   
+  .card1 button{
+    z-index: 100;
+  }
+  
+  i {
+    font-size: 16px;
+    width: 96%;
+    display: flex;
+    margin: auto;
+  }
   .card1 {
-    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 28vw;
-    height: 80vh;
+    width: 25vw;
+    height: 70vh;
     margin-bottom: 100px;
     border-radius: 20px;
-    background-image: url("https://cdna.artstation.com/p/assets/images/images/027/395/858/large/frederic-caeyers-charger-front-use.jpg?1591403698");
-    background-position: center;
+    background-image: url("https://www.dodgegarage.com/news-api/wp-content/uploads/2020/07/DG021_023CHh4h740csegatkdia9k5921hgv7.jpg");
+    background-position: 48%;
     border: 1px solid black;
     position: relative;
     background-size: cover;
     z-index: 0;
   }
 
-  .card1 button{
-    z-index: 100;
-  }
   
-  i {
-    margin-top: 7px;
-    font-size: 16px;
-    width: 100%;
-  }  
 
 
   .card2 {
@@ -267,12 +293,12 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 28vw;
-    height: 80vh;
+    width: 25vw;
+    height:auto;
     margin-bottom: 100px;
     border-radius: 20px;
-    background-image: url("https://gotmdm.com/custom/wp-content/uploads/sites/6/2017/12/SpeedKore-Dodge-Challenger-SRT-Demon-2017-front-face.jpg");
-    background-position: center;
+    background-image: url("https://www.getdodge.com/wp-content/uploads/2021/05/2021-Dodge-Challenger-models-available-near-Long-Beach-and-Huntington-Beach.jpg");
+    background-position:9.5%;
     border: 1px solid black;
     position: relative;
     background-size: cover;
@@ -288,8 +314,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 28vw;
-    height: 80vh;
+    width: 25vw;
+    height: 70vh;
     border-radius: 20px;
     background-image: url("https://www.largus.fr/images/2022-08/dodge-hornet-2022-bleu-ar-mk.jpg");
     background-position: 59%;
@@ -303,8 +329,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 28vw;
-    height: 80vh;
+    width: 25vw;
+    height: auto;
     border-radius: 20px;
     background-image: url("https://c4.wallpaperflare.com/wallpaper/938/537/269/2016-dodge-durango-wallpaper-preview.jpg");
     background-position: center;
@@ -326,7 +352,9 @@ nav a:hover {
   font-weight: unset;
   font-style: italic;
     }
-  
+
+
+    
   h3 {
     font-family: 'Italiana', sans-serif;
     color: #fffefe;
@@ -383,10 +411,9 @@ nav a:hover {
   
 
 @media screen and (max-width:500px){
+
   body{
     margin: 0;
-
-
   }
 
 
@@ -412,7 +439,6 @@ nav a:hover {
   .nav-toggler.active {
     left: 10px;
     position: fixed;
-    border: 2px solid #000000a8;
     border-radius: 7px;
     width: 30px;
   }
